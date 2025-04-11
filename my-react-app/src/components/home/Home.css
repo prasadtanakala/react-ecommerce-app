@@ -1,0 +1,120 @@
+.product-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .product-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #f8f8f8;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .product-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-info h3 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .product-category {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+  }
+  
+  .product-description {
+    color: #555;
+    font-size: 0.9rem;
+    margin: 0 0 15px;
+    line-height: 1.4;
+    flex-grow: 1;
+  }
+  
+  .product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    color: #2a6496;
+    font-size: 1.2rem;
+  }
+  
+  .product-rating {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .product-cart-details {
+    background: rgb(4, 72, 99);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .product-cart-details:hover {
+    background: rgb(3, 88, 122);
+  }
+  
+  .loading, .error {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .error {
+    color: #d32f2f;
+  }
